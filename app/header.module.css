@@ -1,0 +1,4 @@
+.shadow {
+  box-shadow: -8px 0px 20px rgba(162, 239, 253, 0.25),
+    0px 0px 20px rgba(98, 230, 109, 0.25), 8px 0px 20px rgba(221, 243, 238, 0.25);
+}
