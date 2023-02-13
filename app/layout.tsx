@@ -12,26 +12,26 @@ const NestedLayout = ({ children }: Props) => {
   return (
     <main className="tablet:mt-base mt-16 flex w-full items-center tablet:justify-center desktop:justify-start">
       <div className="flex w-fit flex-col text-slate-200">
-        <span className="mb-3 w-fit rounded-2xl border-solid bg-green-900 px-3 py-1 text-xs font-bold text-green-300">
+        <span className="animate-slide-up-fade animation-delay-200 mb-3 w-fit rounded-2xl border-solid bg-green-900 px-3 py-1 text-xs font-bold text-green-300">
           Currently in private poc
         </span>
-        <h1 className="mb-6 w-full text-4xl font-bold leading-[2.75rem] tablet:w-[20ch] tablet:text-5xl tablet:leading-[4.25rem] desktop:text-6xl">
+        <h1 className="animate-slide-up-fade animation-delay-200 mb-6 w-full text-4xl font-bold leading-[2.75rem] tablet:w-[20ch] tablet:text-5xl tablet:leading-[4.25rem] desktop:text-6xl">
           The only data protocol API for a new age.
         </h1>
         {/* <h2 className="mb-1 text-2xl font-medium">
           Develop, deploy, and scale your data protocol layer.
         </h2> */}
-        <h2 className="mb-1 text-2xl font-semibold text-gray-300 tablet:text-3xl">
+        <h2 className="animate-slide-up-fade animation-delay-200 mb-1 text-2xl font-semibold text-gray-300 tablet:text-3xl">
           Rethink Authentication.
         </h2>
         {/* <h3 className="mb-6 w-[60ch] text-xl">
           Reauth provides great DevEx whilst ensuring users control their data
           and enterprises can access it on-request effecitively and efficiently.
         </h3> */}
-        <h3 className="mb-6 text-lg tablet:text-xl desktop:w-[60ch]">
+        <h3 className="animate-slide-up-fade animation-delay-200 mb-6 text-lg tablet:text-xl desktop:w-[60ch]">
           User data ownership. Enterprise data request.
         </h3>
-        <h4 className="text-lg font-medium">
+        <h4 className="animate-slide-up-fade animation-delay-200 text-lg font-medium">
           Press{" "}
           <span className="mx-1 rounded-lg bg-slate-800 px-2 py-[2px] font-semibold">
             A
@@ -58,7 +58,7 @@ export default function RootLayout({
       >
         <Matrix />
         <Header />
-        <Modal />
+        {/* <Modal /> */}
         <NestedLayout>{children}</NestedLayout>
         <Footer />
       </body>

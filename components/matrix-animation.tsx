@@ -28,10 +28,13 @@ export default function Matrix() {
     ctx.current.fillRect(0, 0, canvas.current!.width, canvas.current!.height);
     for (var i = 0; i < drops.length; i++) {
       var text = letters[Math.floor(Math.random() * letters.length)];
-      ctx.current.fillStyle = "#121212";
+      ctx.current.fillStyle = "#25353D";
       ctx.current.fillText(text, i * fontSize, drops[i] * fontSize);
       drops[i]++;
-      if (drops[i] * fontSize > canvas.current!.height && Math.random() > 0.95) {
+      if (
+        drops[i] * fontSize > canvas.current!.height &&
+        Math.random() > 0.95
+      ) {
         drops[i] = 0;
       }
     }
@@ -41,5 +44,5 @@ export default function Matrix() {
     setInterval(draw, 33);
   }, []);
 
-  return <canvas id="matrix" className="absolute -z-10 left-0 m-0 block p-0" />;
+  return <canvas id="matrix" className="absolute left-0 -z-10 m-0 block p-0" />;
 }

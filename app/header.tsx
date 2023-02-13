@@ -3,7 +3,7 @@ import styles from "./header.module.css";
 
 export default function Header() {
   return (
-    <div className="my-8 flex w-full items-center justify-between">
+    <div className="my-8 flex w-full animate-slide-down-fade items-center justify-between animation-delay-200">
       <h3 className="text-xl font-semibold">Reauth</h3>
       <div>
         <button className="mr-3 rounded-md border-[1px] border-solid border-slate-700 bg-slate-900 px-4 py-2 font-semibold text-slate-300 mobile:px-2 mobile:text-sm tablet:px-4 tablet:text-base">

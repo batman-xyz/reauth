@@ -3,14 +3,12 @@
 import { Canvas, useLoader } from "@react-three/fiber";
 import { Suspense, useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, SpotLight } from "@react-three/drei";
 
 const Model = () => {
   const gltf = useLoader(GLTFLoader, "./scene.gltf");
   return (
-    <>
-      <primitive object={gltf.scene} scale={2.0} />
-    </>
+    <primitive object={gltf.scene} scale={2.0} />
   );
 };
 
